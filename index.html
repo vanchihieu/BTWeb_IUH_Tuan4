@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./reset.css">
 </head>
 <style>
     #menu-container {
@@ -287,6 +288,52 @@
         cursor: pointer;
         margin-left: 10px;
     }
+    /* FOOTER */
+    
+    footer {
+        width: 100%;
+        height: 240px;
+        background-color: #1d2128;
+        padding: 95px 130px;
+    }
+    
+    .footer_left {
+        display: flex;
+    }
+    
+    .footer_item {
+        display: flex;
+        flex-direction: column;
+        padding-right: 50px;
+    }
+    
+    .footer_left-title {
+        color: #bdc0c6;
+        font-size: 24px;
+        font-weight: bold;
+    }
+    
+    .footer_left-content {
+        color: #d5d8dd;
+        padding-top: 26px;
+    }
+    
+    .btnEnglish {
+        color: #d5d8dd;
+        border: 1px solid #d5d8dd;
+        width: 110px;
+        height: 20px;
+        border-radius: 5px;
+        padding: 5px 10px;
+        margin-top: 15px;
+    }
+    
+    .iconArrowDown {
+        color: white;
+        width: 5px;
+        height: 5px;
+        display: inline-block;
+    }
 </style>
 
 
@@ -511,7 +558,33 @@
     </section>
 
     <footer>
-
+        <div class="footer_left">
+            <div class="footer_item">
+                <span class="footer_left-title">About</span>
+                <span class="footer_left-content">Home</span>
+                <span class="footer_left-content">Shop</span>
+                <span class="footer_left-content">Our story</span>
+                <span class="footer_left-content">Blogs</span>
+                <div class="btnEnglish">
+                    <span>English</span>
+                    <i class="mega-octicon octicon-chevron-down"></i>
+                </div>
+            </div>
+            <div class="footer_item">
+                <span class="footer_left-title">Help</span>
+                <span class="footer_left-content">Shipping & Returns</span>
+                <span class="footer_left-content">Track Order</span>
+                <span class="footer_left-content">FAQs</span>
+            </div>
+            <div class="footer_item">
+                <span class="footer_left-title">Contact</span>
+                <span class="footer_left-content">Phone:</span>
+                <span class="footer_left-content">(+1) 123 456 7893</span>
+                <span class="footer_left-content">Email:</span>
+                <span class="footer_left-content">name@email.com</span>
+            </div>
+        </div>
+        <div class="footer_right"></div>
     </footer>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
