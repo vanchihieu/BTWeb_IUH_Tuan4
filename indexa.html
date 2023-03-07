@@ -41,15 +41,15 @@
         position: relative;
     }
     
-    .searchItem {
+    .rightitem .searchItem {
         position: absolute;
         left: 15px;
-        top: 10px;
+        top: 11px;
     }
     
     .rightitem .input_right {
         width: 180px;
-        height: 30px;
+        height: 33px;
         color: #e7e9ed;
         padding-left: 40px;
         border-radius: 5px;
@@ -107,6 +107,12 @@
         text-align: center;
     }
     
+    .products_list-item:first-child {
+        background-color: #459d7a;
+        color: white;
+        border-radius: 5px;
+    }
+    
     .products_list-item:not(:last-child) {
         border-right: 1px solid #459d7a;
     }
@@ -136,7 +142,7 @@
     
     .input_right {
         width: 180px;
-        height: 30px;
+        height: 38px;
         color: #e7e9ed;
         padding-left: 40px;
         border-radius: 5px;
@@ -163,10 +169,12 @@
     
     .products {
         display: flex;
+        margin-bottom: 25px;
     }
     
     .products_item {
         margin-right: 30px;
+        position: relative
     }
     
     .products_item-image {
@@ -182,14 +190,60 @@
         top: 13px;
         text-align: center;
         line-height: 27px;
-        border-radius: 5px;
+        border-radius: 15px;
         font-size: 12px;
         color: #8c5d11;
     }
     
     .products_item-title {
-        color: #585a5d;
-        margin: 5px 10px;
+        color: #98999b;
+        margin-top: 10px;
+        margin-bottom: 0;
+        color: #3b3e42;
+    }
+    
+    .products_item-content {
+        margin: 8px 0;
+        color: #a1a2a4;
+        font-weight: 400;
+    }
+    
+    .price_first {
+        font-size: 35px;
+        color: #323842;
+        font-weight: bold;
+    }
+    
+    .price_second {
+        color: rgb(202, 205, 210);
+        font-size: 20px;
+        font-weight: bolder;
+        margin-left: 5px;
+        margin-bottom: 20px;
+    }
+    
+    .cardSale {
+        position: absolute;
+        bottom: -13px;
+        right: -1px;
+    }
+    
+    .products_title-image6 {
+        position: absolute;
+        width: 45px;
+        height: 27px;
+        background: #ffc970;
+        right: 10px;
+        top: 13px;
+        text-align: center;
+        line-height: 27px;
+        border-radius: 15px;
+        font-size: 12px;
+        color: #8c5d11;
+    }
+    
+    .products:last-child {
+        margin-bottom: 30px;
     }
 </style>
 
@@ -247,50 +301,161 @@
                 <img src="./1_ProductListing/product1.png" alt="">
                 <span class="products_title-image">Best-seller</span>
             </div>
-            <h3>Product title</h3>
-            <p class="products_item-title">Labore sinit ipsume dolore mollit</p>
+            <h3 class="products_item-title">Product title</h3>
+            <p class="products_item-content">Labore sinit ipsume dolore mollit</p>
             <div>
-                <span>$32</span>
-                <span>$42</span>
-                <img src="./1_ProductListing/sales.png" alt="">
+                <span class="price_first">$32</span>
+                <span class="price_second">$42</span>
+                <img src="./1_ProductListing/sales.png" alt="" class="cardSale">
             </div>
         </div>
         <div class="products_item">
-            <div>
+            <div class="products_item-image">
                 <img src="./1_ProductListing/product2.png" alt="">
+                <span class="products_title-image">Best-seller</span>
             </div>
-            <h3>Product title</h3>
-            <p>Labore sinit ipsume dolore mollit</p>
+            <h3 class="products_item-title">Product title</h3>
+            <p class="products_item-content">Labore sinit ipsume dolore mollit</p>
             <div>
-                <span>$32</span>
-                <span>$42</span>
-                <img src="./1_ProductListing/sales.png" alt="">
+                <span class="price_first">$32</span>
+                <span class="price_second">$42</span>
+                <img src="./1_ProductListing/sales.png" alt="" class="cardSale">
             </div>
         </div>
         <div class="products_item">
-            <div>
+            <div class="products_item-image">
                 <img src="./1_ProductListing/product3.png" alt="">
+                <span class="products_title-image">Best-seller</span>
             </div>
-            <h3>Product title</h3>
-            <p>Labore sinit ipsume dolore mollit</p>
+            <h3 class="products_item-title">Product title</h3>
+            <p class="products_item-content">Labore sinit ipsume dolore mollit</p>
             <div>
-                <span>$32</span>
-                <span>$42</span>
-                <img src="./1_ProductListing/sales.png" alt="">
+                <span class="price_first">$32</span>
+                <span class="price_second">$42</span>
+                <img src="./1_ProductListing/sales.png" alt="" class="cardSale">
             </div>
         </div>
         <div class="products_item">
-            <div>
+            <div class="products_item-image">
                 <img src="./1_ProductListing/product4.png" alt="">
+                <span class="products_title-image">Best-seller</span>
             </div>
-            <h3>Product title</h3>
-            <p>Labore sinit ipsume dolore mollit</p>
+            <h3 class="products_item-title">Product title</h3>
+            <p class="products_item-content">Labore sinit ipsume dolore mollit</p>
             <div>
-                <span>$32</span>
-                <span>$42</span>
-                <img src="./1_ProductListing/sales.png" alt="">
+                <span class="price_first">$32</span>
+                <span class="price_second">$42</span>
+                <img src="./1_ProductListing/sales.png" alt="" class="cardSale">
             </div>
         </div>
+
+
+    </section>
+    <section class="products">
+        <div class="products_item">
+            <div class="products_item-image">
+                <img src="./1_ProductListing/product5.png" alt="">
+            </div>
+            <h3 class="products_item-title">Product title</h3>
+            <p class="products_item-content">Labore sinit ipsume dolore mollit</p>
+            <div>
+                <span class="price_first">$32</span>
+                <span class="price_second">$42</span>
+                <img src="./1_ProductListing/sales.png" alt="" class="cardSale">
+            </div>
+        </div>
+        <div class="products_item">
+            <div class="products_item-image">
+                <img src="./1_ProductListing/product6.png" alt="">
+                <span class="products_title-image6">New</span>
+            </div>
+            <h3 class="products_item-title">Product title</h3>
+            <p class="products_item-content">Labore sinit ipsume dolore mollit</p>
+            <div>
+                <span class="price_first">$32</span>
+                <span class="price_second">$42</span>
+                <img src="./1_ProductListing/sales.png" alt="" class="cardSale">
+            </div>
+        </div>
+        <div class="products_item">
+            <div class="products_item-image">
+                <img src="./1_ProductListing/product7.png" alt="">
+            </div>
+            <h3 class="products_item-title">Product title</h3>
+            <p class="products_item-content">Labore sinit ipsume dolore mollit</p>
+            <div>
+                <span class="price_first">$32</span>
+                <span class="price_second">$42</span>
+                <img src="./1_ProductListing/sales.png" alt="" class="cardSale">
+            </div>
+        </div>
+        <div class="products_item">
+            <div class="products_item-image">
+                <img src="./1_ProductListing/product8.png" alt="">
+            </div>
+            <h3 class="products_item-title">Product title</h3>
+            <p class="products_item-content">Labore sinit ipsume dolore mollit</p>
+            <div>
+                <span class="price_first">$32</span>
+                <span class="price_second">$42</span>
+                <img src="./1_ProductListing/sales.png" alt="" class="cardSale">
+            </div>
+        </div>
+
+
+    </section>
+    <section class="products">
+        <div class="products_item">
+            <div class="products_item-image">
+                <img src="./1_ProductListing/product9.png" alt="">
+                <span class="products_title-image6">New</span>
+            </div>
+            <h3 class="products_item-title">Product title</h3>
+            <p class="products_item-content">Labore sinit ipsume dolore mollit</p>
+            <div>
+                <span class="price_first">$32</span>
+                <span class="price_second">$42</span>
+                <img src="./1_ProductListing/sales.png" alt="" class="cardSale">
+            </div>
+        </div>
+        <div class="products_item">
+            <div class="products_item-image">
+                <img src="./1_ProductListing/product10.png" alt="">
+            </div>
+            <h3 class="products_item-title">Product title</h3>
+            <p class="products_item-content">Labore sinit ipsume dolore mollit</p>
+            <div>
+                <span class="price_first">$32</span>
+                <span class="price_second">$42</span>
+                <img src="./1_ProductListing/sales.png" alt="" class="cardSale">
+            </div>
+        </div>
+        <div class="products_item">
+            <div class="products_item-image">
+                <img src="./1_ProductListing/product11.png" alt="">
+            </div>
+            <h3 class="products_item-title">Product title</h3>
+            <p class="products_item-content">Labore sinit ipsume dolore mollit</p>
+            <div>
+                <span class="price_first">$32</span>
+                <span class="price_second">$42</span>
+                <img src="./1_ProductListing/sales.png" alt="" class="cardSale">
+            </div>
+        </div>
+        <div class="products_item">
+            <div class="products_item-image">
+                <img src="./1_ProductListing/product12.png" alt="">
+                <span class="products_title-image6">New</span>
+            </div>
+            <h3 class="products_item-title">Product title</h3>
+            <p class="products_item-content">Labore sinit ipsume dolore mollit</p>
+            <div>
+                <span class="price_first">$32</span>
+                <span class="price_second">$42</span>
+                <img src="./1_ProductListing/sales.png" alt="" class="cardSale">
+            </div>
+        </div>
+
 
     </section>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer"
