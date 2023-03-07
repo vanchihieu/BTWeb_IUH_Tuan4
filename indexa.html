@@ -38,13 +38,22 @@
     .rightitem {
         color: rgba(0, 0, 0, 0.5);
         display: flex;
+        position: relative;
+    }
+    
+    .searchItem {
+        position: absolute;
+        left: 15px;
+        top: 10px;
     }
     
     .rightitem .input_right {
         width: 180px;
         height: 30px;
         color: #e7e9ed;
-        padding-left: 30px;
+        padding-left: 40px;
+        border-radius: 5px;
+        outline: none;
     }
     /* nav image */
     
@@ -70,6 +79,84 @@
         width: 420px;
         line-height: 25px;
     }
+    /* Products */
+    
+    .products {
+        width: 85%;
+        margin: 0 auto;
+        padding-top: 65px;
+    }
+    
+    .products .products_navbar {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .products_list-item {
+        color: #459d7a;
+        width: 120px;
+        height: 20px;
+        padding: 15px 30px;
+        font-size: 20px;
+        background-color: white;
+        transition: all 0.25s linear;
+        display: inline-block;
+        text-align: center;
+    }
+    
+    .products_list-item:not(:last-child) {
+        border-right: 1px solid #459d7a;
+    }
+    
+    .products_list-item:hover {
+        background-color: #459d7a;
+        color: white;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+    
+    .products_navbar-search {
+        padding-right: 200px;
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+    
+    .products .searchItem {
+        position: absolute;
+        top: 18px;
+        left: 13px;
+        color: #323842;
+        font-size: 15px;
+        font-weight: bold;
+    }
+    
+    .products .input_right {
+        width: 180px;
+        height: 30px;
+        color: #e7e9ed;
+        padding-left: 40px;
+        border-radius: 5px;
+        outline: none;
+    }
+    
+    .sortItem {
+        background: #f3f4f6;
+        width: 130px;
+        height: 40px;
+        font-size: 20px;
+        text-align: center;
+        line-height: 35px;
+        margin-left: 10px;
+        border-radius: 5px;
+        padding: 5px 0;
+        color: #565e6c;
+    }
+    
+    .iconStream {
+        font-size: 18px;
+        padding-left: 5px;
+    }
 </style>
 
 
@@ -86,7 +173,7 @@
         </div>
         <div id="right">
             <div class="rightitem">
-                <i class="fa fa-search">   
+                <i class="fa fa-search searchItem">   
                 </i>
                 <input type="text" class="input_right" placeholder="Search product">
             </div>
@@ -106,6 +193,25 @@
         <p class="navImage_content">Aliquip fugiat ipsum nostrud ex et eu incididunt quis minim doore excepteur voluptate</p>
     </div>
 
+    <section class="products">
+        <div class="products_navbar">
+            <div class="products_navbar-list">
+                <span class="products_list-item">All Products</span>
+                <span class="products_list-item">Face</span>
+                <span class="products_list-item">Body</span>
+            </div>
+            <div class="products_navbar-search">
+                <i class="fa fa-search searchItem">   
+                </i>
+                <input type="text" class="input_right" placeholder="Search product">
+                <div class="sortItem">
+                    <span>Sort by</span> <i class="fa fa-stream iconStream"></i></div>
+            </div>
+        </div>
+        <div class="products_item"></div>
+        <div class="products_item"></div>
+        <div class="products_item"></div>
+    </section>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
 </body>
